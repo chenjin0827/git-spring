@@ -13,7 +13,7 @@ public class JamesTypeFilter implements TypeFilter {
     /**
      * @param metadataReader        读取到当前正在扫描类的信息
      * @param metadataReaderFactory 可以获取到其他任何类信息
-     * @return
+     * @return 可以根据自己的业务进行判定是否扫描生成实例
      * @throws IOException
      */
     @Override

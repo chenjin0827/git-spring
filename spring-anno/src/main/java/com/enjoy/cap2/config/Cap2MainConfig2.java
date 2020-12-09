@@ -22,7 +22,7 @@ import org.springframework.stereotype.Controller;
 @ComponentScan(value = {"com.enjoy.cap2"},excludeFilters = {
         @ComponentScan.Filter(type = FilterType.ANNOTATION,classes ={Controller.class}),
         @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE,classes = {BookService.class})
-},useDefaultFilters = true)//默认是true，扫描所有组件，要改成false，使用自定义扫描范围
+},useDefaultFilters = false)//默认是true，扫描所有组件，要改成false，使用自定义扫描范围
 public class Cap2MainConfig2 {
     @Bean
     public Person person() {
